@@ -1,4 +1,4 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
+#~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -113,8 +113,25 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#source /opt/Xilinx/Vivado_2016-2/Vivado/2016.2/settings64.sh
-#source /opt/Xilinx/Vivado_2016-1/Vivado/2016.1/settings64.sh
+# source settings for vivado
+source /opt/Xilinx/Vivado/2017.2/settings64.sh
+#source /opt/Xilinx/SDK/2017.2/settings64.sh
 
 #alias for matlab starting
-alias matlab='/home/lazarc/MATLAB/bin/matlab'
+alias matlab='/usr/local/MATLAB/R2014b/bin/matlab'
+
+#alias for systemWorkbench starting
+alias systemWb='/home/lazarc/Ac6/SystemWorkbench/eclipse'
+
+#alias for stm32cubemx starting
+alias stm32cubemx='/home/lazarc/STM32CubeMX/STM32CubeMX'
+
+# alias for quartus starting
+alias quartus='/opt/altera/15.0/quartus/bin/quartus'
+
+# added by Anaconda3 4.4.0 installer
+export PATH="/home/lazarc/anaconda3/bin:$PATH"
+
+# clear terminal after sourcing everything
+clear
+
